@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import os
 from csv import DictReader, reader, DictWriter
 
@@ -35,7 +36,7 @@ p = '_data/allegations'
 for f in os.listdir(p):
     with open(os.path.join(p,f)) as fd:
         allegations_fieldnames=next(reader(fd))
-        dr = DictReader(fd, fieldnames=allegation_fieldnames)
+        dr = DictReader(fd, fieldnames=allegations_fieldnames)
         allegations.extend(row for row in dr)
 
 with open("_data/rosters/2020.05.08.csv") as fd:
@@ -102,7 +103,7 @@ for i in ["allegations",
 # _officers/
 
 existing_officer_pages = [i.strip('.md')
-                          for i in listdir('_officers/')]
+                          for i in os.listdir('_officers/')]
 badge_numbers = [i["Badge_Num"] for i in roster]
 nonexistent_pages = set(badge_numbers).difference(set(existing_officer_pages))
 for page in nonexistent_pages:
