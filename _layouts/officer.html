@@ -1,41 +1,108 @@
 ---
 layout: default
 ---
+
+{% comment %}Hack to convert serial to string{% endcomment %}
+{% capture serial %}{{page.serial | escape}}{% endcapture %}
+{% capture name %}{{site.data.roster_normalized[serial].Name | escape}}{% endcapture %}
+{% assign compensations = site.data.compensation_normalized | where: "Name", name %}
+{% assign allegations = site.data.allegations_normalized | where: "ID #", serial %}
+
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
-    <header class="post-header">
-        <h1 class="post-title p-name" itemprop="name headline">
-            {{ site.data.roster_normalized[page.serial].Name | escape }}
-        </h1>
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">{{ name }}</h1>
+  </header>
 
-        {% comment %}Hack to convert serial to string{% endcomment %}
-        {% capture serial %}{{page.serial | escape}}{% endcapture %}
+  <h2>Basic Information</h2>
+  <table>
+    <tr>
+      <td><b>Serial</b></td>
+      <td>{{serial}}</td>
+    </tr>
+    <tr>
+      <td><b>Job Title</b></td>
+      <td>{{ site.data.roster_normalized[serial].Title_Description | escape }}</td>
+    </tr>
+    <tr>
+      <td><b>Unit</b></td>
+      <td>{{ site.data.roster_normalized[serial].Unit | escape }} - {{site.data.roster_normalized[serial].Unit_Description | escape}}</td>
+    </tr>
+    <tr>
+      <td><b>Employment Status</b></td>
+      <td>{{ page.employment_status | escape }}</td>
+    </tr>
+    <tr>
+      <td><b>Last Updated</b></td>
+      <td>{{ page.last_updated | date: '%B %d, %Y' }}</td>
+    </tr>
+    <tr>
+      <td><b>Compensation</b></td>
+      <td>
         <table>
+          <thead>
             <tr>
-                <td><b>Serial</b></td>
-                <td>{{serial}}</td>
+              <th>Year</th>
+              <th>Base Pay</th>
+              <th>Hourly Rate</th>
+              <th>Overtime</th>
+              <th>Gross Pay</th>
             </tr>
+          </thead>
+          <tbody>
+          {% for compensation in compensations %}
             <tr>
-                <td><b>Job Title</b></td>
-                <td>{{ site.data.roster_normalized[serial].Title_Description | escape }}</td>
+              <td>{{compensation["Year"]}}</td>
+              <td>{{compensation["Base Pay"]}}</td>
+              <td>{{compensation["Hourly Rate"]}}</td>
+              <td>{{compensation["Overtime"]}}</td>
+              <td>{{compensation["Gross Pay"]}}</td>
             </tr>
+          {% endfor %}
+          {% if compensations.size == 0 %}
             <tr>
-                <td><b>Unit</b></td>
-                <td>{{ site.data.roster_normalized[serial].Unit | escape }} - {{site.data.roster_normalized[serial].Unit_Description | escape}}</td>
+              <td colspan="5"><em>No compensation found.</em></td>
             </tr>
-            <tr>
-                <td><b>Employment Status</b></td>
-                <td>{{ page.employment_status | escape }}</td>
-            </tr>
-            <tr>
-                <td><b>Last Updated</b></td>
-                <td>{{ page.last_updated | date: '%B %d, %Y' }}</td>
-            </tr>
+          {% endif %}
+          </tbody>
         </table>
-    </header>
+      </td>
+    </tr>
+  </table>
+ 
+  <h2>OPA Allegations</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>OPA #</th>
+        <th>Occurred Date</th>
+        <th>Incident Type</th>
+        <th>Allegation</th>
+        <th>Finding</th>
+        <th>Finding Date</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for allegation in allegations %}
+      <tr>
+        <td>{{allegation["OPA #"]}}</td>
+        <td>{{allegation["Occurred date"]}}</td>
+        <td>{{allegation["Incident type"]}}</td>
+        <td>{{allegation["Allegation"]}}</td>
+        <td>{{allegation["Finding"]}}</td>
+        <td>{{allegation["Finding date"]}}</td>
+      </tr>
+    {% endfor %}
+    {% if allegations.size == 0 %}
+      <tr>
+        <td colspan="6"><em>No allegations found.</em></td>
+      </tr>
+    {% endif %}
+    </tbody>
+  </table>
 
-    <div class="post-content e-content" itemprop="articleBody">
-        {{content}}
-    </div>
+  <div class="post-content e-content" itemprop="articleBody">
+    {{content}}
+  </div>
 
-    <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>

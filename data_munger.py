@@ -91,26 +91,22 @@ if roster_duplicate_count and compensation_duplicate_count:
 # _data/allegations
 # _data/compensation
 # _data/rosters
-
-for i in ["allegations",
-          "compensation",
-          "roster"]:
+for i in ["roster"]:
     with open(os.path.join("_data/", f"{i}_normalized.json"), "w") as fd:
+        fieldnames = globals().get(f"{i}_fieldnames")
+        rows = globals().get(f"{i}")
+        keyed_dict = item_list_to_keyed_dict(rows, "Badge_Num")
+        fd.write(json.dumps(keyed_dict, indent=2))
+
+for i in ["allegations", "compensation"]:
+    with open(os.path.join("_data/", f"{i}_normalized.csv"), "w") as fd:
         # allegation_
         fieldnames = globals().get(f"{i}_fieldnames")
         rows = globals().get(f"{i}")
 
-        # writer = DictWriter(fd, fieldnames=fieldnames)
-        # writer.writeheader()
-        # writer.writerows(rows)
-
-        keys = {
-            "allegations": "ID #",
-            "compensation": "Name", # ???
-            "roster": "Badge_Num"
-        }
-        keyed_dict = item_list_to_keyed_dict(rows, keys[i])
-        fd.write(json.dumps(keyed_dict, indent=2))
+        writer = DictWriter(fd, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(rows)
 
 # create all .md files
 # Badge_Num
