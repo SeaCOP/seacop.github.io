@@ -4,17 +4,23 @@ layout: default
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
     <header class="post-header">
         <h1 class="post-title p-name" itemprop="name headline">
-            {{ page.name | escape }}
+            {{ site.data.roster_normalized[page.serial].Name | escape }}
         </h1>
 
+        {% comment %}Hack to convert serial to string{% endcomment %}
+        {% capture serial %}{{page.serial | escape}}{% endcapture %}
         <table>
             <tr>
                 <td><b>Serial</b></td>
-                <td>{{ page.serial | escape }}</td>
+                <td>{{serial}}</td>
             </tr>
             <tr>
                 <td><b>Job Title</b></td>
-                <td>{{ page.job_title | escape }}</td>
+                <td>{{ site.data.roster_normalized[serial].Title_Description | escape }}</td>
+            </tr>
+            <tr>
+                <td><b>Unit</b></td>
+                <td>{{ site.data.roster_normalized[serial].Unit | escape }} - {{site.data.roster_normalized[serial].Unit_Description | escape}}</td>
             </tr>
             <tr>
                 <td><b>Employment Status</b></td>

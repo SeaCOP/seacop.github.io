@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import json
 import os
 from csv import DictReader, reader, DictWriter
 
@@ -30,6 +31,9 @@ def normalize_name(name):
     if len(first):
         first = first[0]
     return f"{last},{first}"
+
+def item_list_to_keyed_dict(item_list, key):
+    return {item[key]: item for item in item_list}
 
 allegations = []
 p = '_data/allegations'
@@ -91,11 +95,22 @@ if roster_duplicate_count and compensation_duplicate_count:
 for i in ["allegations",
           "compensation",
           "roster"]:
-    with open(os.path.join("_data/", f"{i}_normalized.csv"), "w") as fd:
+    with open(os.path.join("_data/", f"{i}_normalized.json"), "w") as fd:
         # allegation_
         fieldnames = globals().get(f"{i}_fieldnames")
         rows = globals().get(f"{i}")
-        DictWriter(fd, fieldnames=fieldnames).writerows(rows)
+
+        # writer = DictWriter(fd, fieldnames=fieldnames)
+        # writer.writeheader()
+        # writer.writerows(rows)
+
+        keys = {
+            "allegations": "ID #",
+            "compensation": "Name", # ???
+            "roster": "Badge_Num"
+        }
+        keyed_dict = item_list_to_keyed_dict(rows, keys[i])
+        fd.write(json.dumps(keyed_dict, indent=2))
 
 # create all .md files
 # Badge_Num
@@ -109,4 +124,8 @@ nonexistent_pages = set(badge_numbers).difference(set(existing_officer_pages))
 for page in nonexistent_pages:
     with open(os.path.join("_officers/",
                            f"{page}.md"), "w") as fd:
-        fd.write("")
+        fd.write("---\n")
+        fd.write(f"serial: {page}\n")
+        fd.write("layout: officer\n")
+        fd.write("---\n")
+        fd.write("\n")

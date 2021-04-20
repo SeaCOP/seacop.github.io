@@ -33,6 +33,10 @@ plugins:
   - jekyll-feed
 repository: seacop/seacop.github.io
 
+header_pages:
+  - officers.markdown
+  - about.markdown
+
 collections:
   officers:
     output: true
