@@ -13,7 +13,7 @@ layout: default
     <h1 class="post-title p-name" itemprop="name headline">{{ name }}</h1>
   </header>
 
-  <h2>Basic Information</h2>
+  <h2>Basic Information (May 2020)</h2>
   <table>
     <tr>
       <td><b>Serial</b></td>
@@ -35,41 +35,38 @@ layout: default
       <td><b>Last Updated</b></td>
       <td>{{ page.last_updated | date: '%B %d, %Y' }}</td>
     </tr>
-    <tr>
-      <td><b>Compensation</b></td>
-      <td>
-        <table>
-          <thead>
-            <tr>
-              <th>Year</th>
-              <th>Base Pay</th>
-              <th>Hourly Rate</th>
-              <th>Overtime</th>
-              <th>Gross Pay</th>
-            </tr>
-          </thead>
-          <tbody>
-          {% for compensation in compensations %}
-            <tr>
-              <td>{{compensation["Year"]}}</td>
-              <td>{{compensation["Base Pay"]}}</td>
-              <td>{{compensation["Hourly Rate"]}}</td>
-              <td>{{compensation["Overtime"]}}</td>
-              <td>{{compensation["Gross Pay"]}}</td>
-            </tr>
-          {% endfor %}
-          {% if compensations.size == 0 %}
-            <tr>
-              <td colspan="5"><em>No compensation found.</em></td>
-            </tr>
-          {% endif %}
-          </tbody>
-        </table>
-      </td>
-    </tr>
+  </table>
+
+  <h2>Compensation Data (2019)</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Year</th>
+        <th>Base Pay</th>
+        <th>Hourly Rate</th>
+        <th>Overtime</th>
+        <th>Gross Pay</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for compensation in compensations %}
+      <tr>
+        <td>{{compensation["Year"]}}</td>
+        <td>{{compensation["Base Pay"]}}</td>
+        <td>{{compensation["Hourly Rate"]}}</td>
+        <td>{{compensation["Overtime"]}}</td>
+        <td>{{compensation["Gross Pay"]}}</td>
+      </tr>
+    {% endfor %}
+    {% if compensations.size == 0 %}
+      <tr>
+        <td colspan="5"><em>No compensation found.</em></td>
+      </tr>
+    {% endif %}
+    </tbody>
   </table>
  
-  <h2>OPA Allegations</h2>
+  <h2>OPA Allegations (September 2020)</h2>
   <table>
     <thead>
       <tr>
