@@ -83,8 +83,17 @@ layout: default
     </thead>
     <tbody>
     {% for allegation in allegations %}
+      {% assign opa_num = allegation["OPA #"] %}
       <tr>
-        <td>{{allegation["OPA #"]}}</td>
+        <td>
+            {% if site.data.opa_ccs contains opa_num %}
+            <a href="{{site.data.opa_ccs[opa_num]}}">
+            {% endif %}
+                {{ opa_num }}
+            {% if site.data.opa_ccs contains opa_num %}
+            </a>
+            {% endif %}
+        </td>
         <td>{{allegation["Occurred date"]}}</td>
         <td>{{allegation["Incident type"]}}</td>
         <td>{{allegation["Allegation"]}}</td>

@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
 import json
 import os
+import re
+import urllib.request
 from csv import DictReader, reader, DictWriter
+from io import StringIO
 
 # https://data.seattle.gov/browse?category=Public+Safety
 # https://data.seattle.gov/Public-Safety/Use-Of-Force/ppi5-g2bj
@@ -11,6 +14,9 @@ from csv import DictReader, reader, DictWriter
 # https://data.seattle.gov/Public-Safety/Seattle-Police-Disciplinary-Appeals/2qns-g7s7
 # https://data.seattle.gov/Public-Safety/disclosure-pilot/b8jg-hk2f
 # https://data.seattle.gov/Public-Safety/Police-Use-of-Force/g6s5-grjm
+
+# Closed Case Summaries
+# https://data.seattle.gov/api/views/f8kp-sfr3/rows.csv
 
 # _data/allegations
 # _data/compensation
@@ -125,3 +131,16 @@ for page in nonexistent_pages:
         fd.write("layout: officer\n")
         fd.write("---\n")
         fd.write("\n")
+
+# Download Closed Case Summaries
+with open("_data/opa_ccs.json", "w") as fd:
+    url = "http://www.seattle.gov/opa/news-and-reports/closed-case-summaries"
+    response = urllib.request.urlopen(url)
+    data = response.read()
+    text = data.decode("utf-8")
+
+    domain = "http://www.seattle.gov/"
+
+    matches = re.findall(r'<a href="(Documents/Departments/OPA/ClosedCaseSummaries/\S+.pdf)" target="_blank">(\S+)</a>', text)
+    ccs = { opa_num: domain + url for url, opa_num in matches }
+    fd.write(json.dumps(ccs, indent=2))
