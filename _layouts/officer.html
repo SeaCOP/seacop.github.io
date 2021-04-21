@@ -79,18 +79,19 @@ layout: default
         <th>Allegation</th>
         <th>Finding</th>
         <th>Finding Date</th>
+        <th>Action Taken</th>
       </tr>
     </thead>
     <tbody>
     {% for allegation in allegations %}
-      {% assign opa_num = allegation["OPA #"] %}
+      {% assign opa_id = allegation["OPA #"] | replace: "OPA", "" %}
       <tr>
         <td>
-            {% if site.data.opa_ccs contains opa_num %}
-            <a href="{{site.data.opa_ccs[opa_num]}}">
+            {% if site.data.opa_ccs contains opa_id %}
+            <a href="{{site.data.opa_ccs[opa_id]}}">
             {% endif %}
-                {{ opa_num }}
-            {% if site.data.opa_ccs contains opa_num %}
+                {{ allegation["OPA #"] }}
+            {% if site.data.opa_ccs contains opa_id %}
             </a>
             {% endif %}
         </td>
@@ -99,6 +100,7 @@ layout: default
         <td>{{allegation["Allegation"]}}</td>
         <td>{{allegation["Finding"]}}</td>
         <td>{{allegation["Finding date"]}}</td>
+        <td>{{allegation["Action taken"]}}</td>
       </tr>
     {% endfor %}
     {% if allegations.size == 0 %}

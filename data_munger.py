@@ -142,5 +142,6 @@ with open("_data/opa_ccs.json", "w") as fd:
     domain = "http://www.seattle.gov/"
 
     matches = re.findall(r'<a href="(Documents/Departments/OPA/ClosedCaseSummaries/\S+.pdf)" target="_blank">(\S+)</a>', text)
-    ccs = { opa_num: domain + url for url, opa_num in matches }
+    # there are some case numbers like 20XXOPA-, some like OPA20xx-, some like 20xx-. removing "OPA" seems like the quickest way to normalize
+    ccs = { opa_num.replace("OPA", ""): domain + url for url, opa_num in matches }
     fd.write(json.dumps(ccs, indent=2))
