@@ -19,7 +19,7 @@ layout: page
         {% capture serial %}{{officer.serial}}{% endcapture %}
         <tr>
           <td>{{ officer.serial | escape }}</td>
-          <td><a href="{{ officer.url }}">{{ site.data.roster_normalized[serial].Name | escape }}</a></td>
+          <td><a href="{{ officer.url }}">{{ site.data.roster_normalized[serial].OrigName | escape }}</a></td>
           <td>{{ site.data.allegations_normalized | where: "ID #", serial | size }}</td>
           <td>{{ officer.last_updated | date: '%B %d, %Y' }}</td>
         </tr>

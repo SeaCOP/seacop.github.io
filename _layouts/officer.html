@@ -10,7 +10,9 @@ layout: default
 
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">{{ name }}</h1>
+    <h1 class="post-title p-name" itemprop="name headline">
+        {{ site.data.roster_normalized[serial].OrigName | escape }}
+    </h1>
   </header>
 
   <h2>Basic Information (May 2020)</h2>

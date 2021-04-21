@@ -22,8 +22,14 @@ from io import StringIO
 # _data/compensation
 # _data/rosters
 
+def normalize_fieldnames(row):
+    if "Name" in row:
+        row.append("OrigName")
+    return row
+
 def normalize_fields(row):
     if "Name" in row:
+        row["OrigName"] = row["Name"]
         row["Name"] = normalize_name(row["Name"])
     return row
 
@@ -45,18 +51,18 @@ allegations = []
 p = '_data/allegations'
 for f in os.listdir(p):
     with open(os.path.join(p,f)) as fd:
-        allegations_fieldnames=next(reader(fd))
+        allegations_fieldnames=normalize_fieldnames(next(reader(fd)))
         dr = DictReader(fd, fieldnames=allegations_fieldnames)
         allegations.extend(row for row in dr)
 
 with open("_data/rosters/2020.05.08.csv") as fd:
     fd.seek(3) # Skip BOM
-    roster_fieldnames = [i.strip() for i in next(reader(fd))]
+    roster_fieldnames = normalize_fieldnames([i.strip() for i in next(reader(fd))])
     dr = DictReader(fd, fieldnames=roster_fieldnames)
     roster = [normalize_fields(row) for row in dr]
 
 with open("_data/compensation/2019.csv") as fd:
-    compensation_fieldnames = [i.strip() for i in next(reader(fd))]
+    compensation_fieldnames = normalize_fieldnames([i.strip() for i in next(reader(fd))])
     dr = DictReader(fd, fieldnames=compensation_fieldnames)
     compensation = [normalize_fields(row) for row in dr]
 
