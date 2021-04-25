@@ -3,6 +3,8 @@ title: Officers
 layout: page
 ---
 
+<p>Click on any table header to sort by that column:</p>
+
 <main>
   <table data-sortable>
     <thead>
