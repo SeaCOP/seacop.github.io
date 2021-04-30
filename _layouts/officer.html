@@ -110,9 +110,24 @@ layout: default
     </tbody>
   </table>
 
-  <div class="post-content e-content" itemprop="articleBody">
-    {{content}}
-  </div>
+  <h2>Writeups</h2>
+  {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+  {% assign no_posts = true %}
+  {% for post in site.posts %}
+    {% if post.badge contains serial %}
+      {% assign no_posts = false %}
+      <span class="post-meta">{{ post.date | date: date_format }}</span>
+      <h3>
+        <a class="post-link" href="{{ post.url | relative_url }}">
+          {{post.title | escape}}
+        </a>
+      </h3>
+      {{post.content}}
+    {% endif %}
+  {% endfor %}
+  {% if no_posts %}
+    No writeups for this officer yet.
+  {% endif %}
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
