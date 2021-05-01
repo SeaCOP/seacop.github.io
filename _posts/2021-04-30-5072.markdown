@@ -1,0 +1,172 @@
+---
+layout: post
+title: Dossier
+badge: 5072
+tags: deception, nullifying evidence, brutality, incompetence, possibly illegal
+date: 2021-04-30
+---
+
+# Summary
+
+Officer habitually lies on time cards, does not show up to work, and
+generally neglects duties when actually in the office. Lying on time
+cards is illegal and can be prosecuted.
+
+Officer repeatedly failed to investigate use of force. Any use of
+force reviewed by the officer should be questioned in light of
+2017OPA-0259 and 2018OPA-0318. 
+
+# 2015-1464
+###### Nullifying Evidence, Incompetence
+
+Officer violated SPD policy by forgetting to turn off the radio when
+responding to an incident, thus tainting In-Car Video recordings.
+
+# 2015OPA-0383
+
+It is unclear from the current data set which named employee the
+officer is in this OPA, but based on the reference in 2017OPA-1287, it
+is likely either NE#1 or NE#2. OPA found that both employees falsified
+time records. They were given training referrals.
+
+# 2016OPA-0497
+###### Nullifying Evidence, Incompetence
+
+Officer failed to turn on In-Car Video when arriving on scene.
+
+# 2017OPA-0259
+###### Brutality, Incompetence, Deception
+
+Officer failed to review use of force by subordinate. Subordinate
+requested assistance twice, officer failed to respond twice. Officer
+left work without directing subordinate in appropriate response to use
+of force as directed by policy.
+
+Officer's justification for failure to respond was that officer was
+heading home, but officer was still on shift at the time of first
+contact by subordinate.
+
+"Based on Named Employee #1’s own statements, he had thus left work at least 30 minutes early and was driving home during his shift." - Page 3, Paragraph 6
+
+This means the officer either lied about the officer's location at the
+time of first contact, or was committing time sheet fraud at the time
+of first contact. The latter is consistent with a pattern of fraud
+that resulted in several other sustained OPA allegations.
+
+"Notably, a review of the RMS system confirmed that while there was an
+accident on the freeway consistent with what Named Employee #1
+described, only one sergeant was logged into the event and that
+sergeant did not log in until 1420 hours –nearly three hours after the
+force was reported to Named Employee #1." - Page 3, Paragraph 7
+
+OPA proved that SPD data directly conflicted with the officer's other
+statements about first contact from the subordinate.
+
+"The OPA Directorfurther notedthat, while not the fault of the
+officer, the photographs did not properly document the injuries as
+they failed to “allow verification of the identity of the person being
+photographed” and were also entered into the DEMS system
+incorrectly. (Lt. Drain Chain of Command Review.)" -Page 4, Paragraph 2
+
+The deception and incompetence of the officer lead to the destruction
+of use of force evidence.
+
+# 2017OPA-0644
+###### Deception, Incompetence, Possibly Illegal
+
+"Named Employee #1 was previously counselled on his time keeping and
+time usage after an OPA investigation." -Page 1, Executive Summary
+
+"It is further alleged that he was not truthful in entering his time
+on the electronic timesheets on at least one occasion." - Page 1,
+Executive Summary
+
+Officer failed to show up to shift, did not report several days off,
+and showed up three hours late for work but didn't report being late
+on time card.
+
+"Had the Complainant not personally observed NE#1 arriving late for
+work, this discrepancy would likely never have been discovered." -Page
+2, Paragraph 7
+
+Officer has been caught committing time sheet fraud multiple
+times. Given that it is unlikely for this to be discovered, it's
+likely something that occurs quite regularly.
+
+"While I cannot conclusively determine that NE#1 was dishonest, I have
+no such problem finding that his actions violated SPD Policy
+5.001-POL-2. NE#1 violated SPD policy and, arguably, City of Seattle
+law when he did not complete his timesheet accurately and when he took
+leave without proper authorization." -Page 3, Paragraph 1
+
+"NE#1 has repeatedly arrived late at work, failed to properly complete
+his timesheet, and has not sought the necessary authorization for
+leave time." -Page 3, Paragraph 4
+
+OPA notes that the officer's time sheet fraud may have broken the law.
+
+# 2017OPA-069
+###### Incompetence
+
+Officer was given nine opportunities to attend a required
+training. Officer signed up for the very last one and then didn't show
+up. It's impossible to tell if this is incompetence or intentionally
+dodging an obligation.
+
+# 2017OPA-1287
+###### Incompetence, Possibly Illegal
+
+Officer is caught committing time sheet fraud a few months
+later. References 2015OPA-0383 (not included in current data set),
+added to list.
+
+After being reprimanded and put on a performance management plan to
+address the behavior, the officer continued to take sick leave without
+notifying supervisor. 
+
+"NE#1 told OPA that his wife had a serious blood disorder that needed
+to be monitored and could, depending on the circumstances, require
+immediate hospitalization. NE#1 stated that on December 16 he did, in
+fact, have to take his wife to the hospital. [...] NE#1 could not
+verify the identity of the clerk that he spoke with and speculated
+that she was one of the precinct’s “relief” clerks." -Page 2,
+Paragraph 3
+
+Officer had the phone number of supervisor, but claims to have called
+precinct clerk instead. Officer's story was not confirmed and officer
+could not identify clerk who was called.
+
+Officer claims to have been taking spouse to the hospital. 
+
+"The Complainant stated that he had further explained to NE#1 that
+there were substantial resources within the Department that he could
+avail himself of to the extent that he was undergoing personal or
+familial difficulties. The Complainant recounted, however, that NE#1
+indicated that he did not need such resources or services." -Page 2,
+Paragraph 2
+
+Within the context of other deception by the officer, it should be
+noted that this claim does not appear to have been vetted. This
+statement by NE#1 may actually conflict with the officer's
+claim. There appears to have been no attempt by OPA to verify the
+story.
+
+# 2018OPA-0318 
+###### Incompetence, Deception
+
+Officer failed to review use of force, again. See
+2017OPA-0259. Officer is demoted for incompetence and deception.
+
+"At the discipline meeting in this matter, the Named Employee’s chain
+of command identified that his assertion that he asked the officers to
+screen this incident at the precinct due to an impending shift change
+was inconsistent with the evidence." -Page 2, Administrative Note
+
+"Complainant alleged that the use of force witness statement provided
+by NE#1 was vague and potentially intentionally inaccurate." -Page 2,
+Paragraph 2
+
+"While at the precinct, the Witness Officer informed NE#1 that, even
+though he had been informed by radio of a warrant, the Witness Officer
+determined that no warrant existed."
+
