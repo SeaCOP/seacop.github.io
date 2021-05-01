@@ -23,6 +23,8 @@ layout: page
           <td>{{ officer.serial | escape }}</td>
           <td><a href="{{ officer.url }}">{{ site.data.roster_normalized[serial].OrigName | escape }}</a></td>
           <td>{{ site.data.allegations_normalized | where: "ID #", serial | size }}</td>
+	  {% comment %} This isn't 100% accurate, but it's 99.97% accurate so... {% endcomment %}
+	  <td>{{ site.data.compensation_normalized | find: "Name", site.data.roster_normalized[serial].OrigName }}</td>
           <td>{{ officer.last_updated | date: '%B %d, %Y' }}</td>
         </tr>
       {% endfor %}
