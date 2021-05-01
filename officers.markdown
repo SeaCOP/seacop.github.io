@@ -12,6 +12,7 @@ layout: page
         <th>Serial</th>
         <th>Name</th>
         <th>Allegation Count</th>
+        <th>Gross Pay (2019)</th>
         <th>Last Updated</th>
       </tr>
     </thead>
@@ -23,8 +24,8 @@ layout: page
           <td>{{ officer.serial | escape }}</td>
           <td><a href="{{ officer.url }}">{{ site.data.roster_normalized[serial].OrigName | escape }}</a></td>
           <td>{{ site.data.allegations_normalized | where: "ID #", serial | size }}</td>
-	  {% comment %} This isn't 100% accurate, but it's 99.97% accurate so... {% endcomment %}
-	  <td>{{ site.data.compensation_normalized | find: "Name", site.data.roster_normalized[serial].OrigName }}</td>
+          {% comment %} This isn't 100% accurate, but it's 99.97% accurate so... {% endcomment %}
+          <td>{{ site.data.compensation_normalized | where: "Name", site.data.roster_normalized[serial].Name | map: "Gross Pay" | first }}</td>
           <td>{{ officer.last_updated | date: '%B %d, %Y' }}</td>
         </tr>
       {% endfor %}

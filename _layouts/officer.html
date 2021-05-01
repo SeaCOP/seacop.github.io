@@ -114,7 +114,7 @@ layout: default
   {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
   {% assign no_posts = true %}
   {% for post in site.posts %}
-    {% if post.badge contains serial %}
+    {% if post.badge contains page.serial %}
       {% assign no_posts = false %}
       <span class="post-meta">{{ post.date | date: date_format }}</span>
       <h3>
