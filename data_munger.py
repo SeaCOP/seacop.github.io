@@ -2,9 +2,17 @@
 import json
 import os
 import re
+import logging
 import urllib.request
 from csv import DictReader, reader, DictWriter
 from io import StringIO
+import pandas as pd
+
+logging.basicConfig(
+    level = logging.INFO,
+    format = '%(levelname)s:%(asctime)s:%(message)s'
+)
+logger = logging.getLogger(__name__)
 
 # https://data.seattle.gov/browse?category=Public+Safety
 # https://data.seattle.gov/Public-Safety/Use-Of-Force/ppi5-g2bj
@@ -21,6 +29,11 @@ from io import StringIO
 # _data/allegations
 # _data/compensation
 # _data/rosters
+
+complaints_url = "https://data.seattle.gov/api/views/99yi-dthu/rows.csv"
+use_of_force_url = "https://data.seattle.gov/api/views/ppi5-g2bj/rows.csv"
+
+
 
 def normalize_fieldnames(row):
     if "Name" in row:
@@ -47,6 +60,13 @@ def normalize_name(name):
 def item_list_to_keyed_dict(item_list, key):
     return {item[key]: item for item in item_list}
 
+
+# logger.info("Downloading complaints dataset...")
+# complaints = pd.read_csv(complaints_url)
+
+# logger.info("Downloading use of force data set...")
+# use_of_force = pd.read_csv(use_of_force_url)
+
 allegations = []
 p = '_data/allegations'
 for f in os.listdir(p):
@@ -65,6 +85,17 @@ with open("_data/compensation/2019.csv") as fd:
     compensation_fieldnames = normalize_fieldnames([i.strip() for i in next(reader(fd))])
     dr = DictReader(fd, fieldnames=compensation_fieldnames)
     compensation = [normalize_fields(row) for row in dr]
+
+missing_officers = []
+with open("_data/named_employee_id_map.csv") as fd:
+    named_employee_id_map_fieldnames = [i.strip() for i in next(reader(fd))]
+    for dr in DictReader(fd, fieldnames=named_employee_id_map_fieldnames):
+        try:
+            m = next(o for o in roster if dr["ID #"] == o["Badge_Num"])
+            m["Anonymous_ID"] = dr['Named Employee ID']
+        except StopIteration:
+            missing_officers.append(dr)
+print(f"Missing {len(missing_officers)} from roster")
 
 
 # make sure they're the same
