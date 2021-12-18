@@ -130,6 +130,32 @@ use_of_force = [{"Record": uof["ID"],
                 if str(uof["Officer_ID"]) in named_employee_map]
 use_of_force_fieldnames = [k for k in use_of_force[0].keys()]
 
+# use_of_force_raw[use_of_force_raw["Incident_Type"] == 'Level 3 - OIS']
+# use_of_force_raw[use_of_force_raw["Incident_Type"] == 'Level 3 - OIS'][["Incident_Num", 'Officer_ID', 'Occured_date_time', 'Subject_Race', 'Subject_Gender']]
+
+# len(set(use_of_force_raw[use_of_force_raw["Incident_Type"] == 'Level 3 - OIS']['Occured_date_time']))
+
+ois_incidents = set()
+officer_involved_shootings = []
+for _, row in use_of_force_raw[
+        use_of_force_raw["Incident_Type"] == 'Level 3 - OIS'][[
+            'Officer_ID',
+            'Occured_date_time',
+            'Subject_Race',
+            'Subject_Gender']].iterrows():
+    if not ((row["Occured_date_time"], row["Officer_ID"]) 
+            in ois_incidents):
+        if str(row["Officer_ID"]) not in named_employee_map:
+            continue
+        oic = dict(row)
+        id_num = named_employee_map[str(row["Officer_ID"])]
+        del(oic['Officer_ID'])
+        oic["ID #"] = id_num
+        officer_involved_shootings.append(oic)
+        ois_incidents.add((row["Occured_date_time"], row["Officer_ID"]))
+officer_involved_shootings_fieldnames = officer_involved_shootings[0].keys()
+        
+
 with open("_data/rosters/2020.05.08.csv") as fd:
     fd.seek(3) # Skip BOM
     roster_fieldnames = normalize_fieldnames([i.strip() for i in next(reader(fd))])
@@ -180,7 +206,7 @@ for i in ["roster"]:
         keyed_dict = item_list_to_keyed_dict(rows, "Badge_Num")
         fd.write(json.dumps(keyed_dict, indent=2))
 
-for i in ["allegations", "compensation", "use_of_force"]:
+for i in ["allegations", "compensation", "use_of_force", "officer_involved_shootings"]:
     with open(os.path.join("_data/", f"{i}_normalized.csv"), "w") as fd:
         # allegation_
         fieldnames = globals().get(f"{i}_fieldnames")
