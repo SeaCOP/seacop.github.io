@@ -1,0 +1,18 @@
+---
+layout: post
+title: Additional 
+badge:
+- 6773
+tags: shooting
+date: 2021-12-18
+---
+
+SPD released a [video](https://www.youtube.com/watch?v=0xf2DLAf3hM)
+that claimed to show the fatal shooting of a car jacking suspect. The
+video was edited to appear to depict the point where the suspect was
+killed.
+
+But according to an [OPA complaint](https://www.seattle.gov/Documents/Departments/OPA/ClosedCaseSummaries/2016OPA-0462ccs10-26-16MA.pdf),
+the part where the suspect was actually killed actually happend
+several minutes later.
+
