@@ -119,8 +119,16 @@ for _, complaint in complaints.iterrows():
 allegations.extend(allegations_from_complaints)
 
 logger.info("Downloading use of force data set...")
-use_of_force = pd.read_csv(use_of_force_url)
-
+use_of_force_raw = pd.read_csv(use_of_force_url)
+use_of_force = [{"ID":uof["ID"],
+                 'Incident_Type': uof['Incident_Type'],
+                 'Occurred date': uof['Occured_date_time'],
+                 'Badge': named_employee_map[str(uof["Officer_ID"])],
+                 'Victim Race': uof['Subject_Race'],
+                 'Victim Gender': uof['Subject_Gender']}
+                for _, uof in use_of_force_raw.iterrows()
+                if str(uof["Officer_ID"]) in named_employee_map]
+use_of_force_fieldnames = [k for k in use_of_force[0].keys()]
 
 with open("_data/rosters/2020.05.08.csv") as fd:
     fd.seek(3) # Skip BOM
@@ -172,7 +180,7 @@ for i in ["roster"]:
         keyed_dict = item_list_to_keyed_dict(rows, "Badge_Num")
         fd.write(json.dumps(keyed_dict, indent=2))
 
-for i in ["allegations", "compensation"]:
+for i in ["allegations", "compensation", "use_of_force"]:
     with open(os.path.join("_data/", f"{i}_normalized.csv"), "w") as fd:
         # allegation_
         fieldnames = globals().get(f"{i}_fieldnames")
