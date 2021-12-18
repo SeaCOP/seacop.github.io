@@ -120,10 +120,10 @@ allegations.extend(allegations_from_complaints)
 
 logger.info("Downloading use of force data set...")
 use_of_force_raw = pd.read_csv(use_of_force_url)
-use_of_force = [{"ID":uof["ID"],
+use_of_force = [{"Record": uof["ID"],
                  'Incident_Type': uof['Incident_Type'],
                  'Occurred date': uof['Occured_date_time'],
-                 'Badge': named_employee_map[str(uof["Officer_ID"])],
+                 'ID #': named_employee_map[str(uof["Officer_ID"])],
                  'Victim Race': uof['Subject_Race'],
                  'Victim Gender': uof['Subject_Gender']}
                 for _, uof in use_of_force_raw.iterrows()

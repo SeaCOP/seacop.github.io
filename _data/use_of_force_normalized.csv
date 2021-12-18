@@ -1,4 +1,4 @@
-ID,Incident_Type,Occurred date,Badge,Victim Race,Victim Gender
+Record,Incident_Type,Occurred date,ID #,Victim Race,Victim Gender
 2014UOF-0001-1377-203,Level 1 - Use of Force,06/07/2014 12:09:00 AM,7465,Black or African American,Male
 2014UOF-0002-1098-166,Level 1 - Use of Force,05/30/2014 02:06:00 PM,7565,White,Male
 2014UOF-0003-1031-125,Level 1 - Use of Force,05/23/2014 05:24:00 PM,7583,Asian,Female

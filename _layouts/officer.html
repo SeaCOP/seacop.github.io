@@ -7,6 +7,7 @@ layout: default
 {% capture name %}{{site.data.roster_normalized[serial].Name | escape}}{% endcapture %}
 {% assign compensations = site.data.compensation_normalized | where: "Name", name %}
 {% assign allegations = site.data.allegations_normalized | where: "ID #", serial %}
+{% assign use_of_force = site.data.use_of_force_normalized | where: "ID #", serial %}
 
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
   <header class="post-header">
@@ -68,7 +69,7 @@ layout: default
     </tbody>
   </table>
  
-  <h2>OPA Allegations (September 2020)</h2>
+  <h2>OPA Allegations</h2>
   <table>
     <thead>
       <tr>
@@ -105,6 +106,38 @@ layout: default
     {% if allegations.size == 0 %}
       <tr>
         <td colspan="6"><em>No allegations found.</em></td>
+      </tr>
+    {% endif %}
+    </tbody>
+  </table>
+
+  <h2>Use of Force Incidents</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Record</th>
+        <th>Incident Type</th>
+        <th>Date of Occurance</th>
+        <th>Victim Race</th>
+        <th>Victim Gender</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for uof in use_of_force %}
+      <tr>
+        <td>
+          {{ uof["OPA #"] }}
+        </td>
+        <td>{{uof["Record"]}}</td>
+        <td>{{uof["Incident type"]}}</td>
+        <td>{{uof["Occurred date"]}}</td>
+        <td>{{uof["Victim Race"]}}</td>
+        <td>{{uof["Victim Gender"]}}</td>
+      </tr>
+    {% endfor %}
+    {% if uof.size == 0 %}
+      <tr>
+        <td colspan="6"><em>No use of force records found.</em></td>
       </tr>
     {% endif %}
     </tbody>
