@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Additional 
+title: SPD video edited to omit critical information
 badge:
 - 6773
 tags: shooting

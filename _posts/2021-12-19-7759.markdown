@@ -1,0 +1,16 @@
+---
+layout: post
+title: Officers shot April 21, 2017
+badge:
+- 7759
+- 7725
+- 5452
+tags: shot
+date: 2021-12-19
+---
+
+"One officer, 30-year-old Hudson Kang, was shot in the chin by a robbery suspect Thursday afternoon."
+"A second officer, 42-year-old Elizabeth Kennedy, was shot in the chest, but was saved by her Kevlar vest."
+"Officer Chris Myers, a 27-year veteran, had his hand grazed by a bullet."
+
+https://www.kiro7.com/news/local/officer-shot-in-face-remains-in-hospital-after-downtown-seattle-gunfight/514829864/
