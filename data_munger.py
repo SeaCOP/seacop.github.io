@@ -32,6 +32,8 @@ logger = logging.getLogger(__name__)
 
 complaints_url = "https://data.seattle.gov/api/views/99yi-dthu/rows.csv"
 use_of_force_url = "https://data.seattle.gov/api/views/ppi5-g2bj/rows.csv"
+wage_data_url = "https://data.seattle.gov/api/views/2khk-5ukd/rows.csv"
+license_data_url = "https://data.seattle.gov/api/views/enxu-fgzb/rows.csv" 
 
 def normalize_fieldnames(row):
     if "Name" in row:
@@ -89,7 +91,7 @@ with open("_data/named_employee_id_map.csv") as fd:
     named_employee_id_map_fieldnames = [i.strip() for i in next(reader(fd))]
     dr = DictReader(fd, fieldnames=named_employee_id_map_fieldnames)
     named_employee_map = {r['Named Employee ID']:r["ID #"] for r in dr}
-        
+
 # make sure they're the same
 allegation_names = set(f"{row['Last name']},{row['First name']}"
 		       for row in allegations)
@@ -155,10 +157,18 @@ for _, row in use_of_force_raw[
         ois_incidents.add((row["Occured_date_time"], row["Officer_ID"]))
 officer_involved_shootings_fieldnames = officer_involved_shootings[0].keys()
         
-
-with open("_data/rosters/2020.05.08.csv") as fd:
-    fd.seek(3) # Skip BOM
-    roster_fieldnames = normalize_fieldnames([i.strip() for i in next(reader(fd))])
+# wage_data_raw = pd.read_csv(wage_data_url)
+roster_field_map = {'badge': 'Badge_Num',
+                    'full_name': 'Name',
+                    'title': 'Title_Description',
+                    'unit': "Unit",
+                    'unit_description': 'Unit_Description',
+                    'first_name': 'first_name',
+                    'middle_name': 'middle_name',
+                    'last_name': 'last_name',
+                    'date': 'date'}
+with open("_data/spd-lookup/db/seed/Seattle-WA-Police-Department_Historical.csv") as fd:
+    roster_fieldnames = normalize_fieldnames([roster_field_map[i.strip()] for i in next(reader(fd))])
     dr = DictReader(fd, fieldnames=roster_fieldnames)
     roster = [normalize_fields(row) for row in dr]
 
