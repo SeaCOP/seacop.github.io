@@ -1,5 +1,0 @@
----
-serial: SPDCOP
-layout: officer
----
-

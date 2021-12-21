@@ -14,17 +14,15 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+# https://data.seattle.gov/Public-Safety/COBAN-Logs/tpvk-5fr3
+
 # https://data.seattle.gov/browse?category=Public+Safety
-# https://data.seattle.gov/Public-Safety/Use-Of-Force/ppi5-g2bj
 # https://data.seattle.gov/Public-Safety/SPD-Officer-Involved-Shooting-OIS-Data/mg5r-efcm
 # https://data.seattle.gov/Public-Safety/Seattle-Police-Department-Beats/nnxn-434b
 # https://data.seattle.gov/Public-Safety/SPD-Public-Disclosure/ayrr-rywh
 # https://data.seattle.gov/Public-Safety/Seattle-Police-Disciplinary-Appeals/2qns-g7s7
 # https://data.seattle.gov/Public-Safety/disclosure-pilot/b8jg-hk2f
-# https://data.seattle.gov/Public-Safety/Police-Use-of-Force/g6s5-grjm
 
-# Closed Case Summaries
-# https://data.seattle.gov/api/views/f8kp-sfr3/rows.csv
 
 # _data/allegations
 # _data/compensation
@@ -32,8 +30,10 @@ logger = logging.getLogger(__name__)
 
 complaints_url = "https://data.seattle.gov/api/views/99yi-dthu/rows.csv"
 use_of_force_url = "https://data.seattle.gov/api/views/ppi5-g2bj/rows.csv"
-wage_data_url = "https://data.seattle.gov/api/views/2khk-5ukd/rows.csv"
-license_data_url = "https://data.seattle.gov/api/views/enxu-fgzb/rows.csv" 
+coban_logs_url = "https://data.seattle.gov/api/views/tpvk-5fr3/rows.csv"
+# wage_data_url = "https://data.seattle.gov/api/views/2khk-5ukd/rows.csv"
+# license_data_url = "https://data.seattle.gov/api/views/enxu-fgzb/rows.csv"
+
 
 def normalize_fieldnames(row):
     if "Name" in row:
@@ -132,11 +132,6 @@ use_of_force = [{"Record": uof["ID"],
                 if str(uof["Officer_ID"]) in named_employee_map]
 use_of_force_fieldnames = [k for k in use_of_force[0].keys()]
 
-# use_of_force_raw[use_of_force_raw["Incident_Type"] == 'Level 3 - OIS']
-# use_of_force_raw[use_of_force_raw["Incident_Type"] == 'Level 3 - OIS'][["Incident_Num", 'Officer_ID', 'Occured_date_time', 'Subject_Race', 'Subject_Gender']]
-
-# len(set(use_of_force_raw[use_of_force_raw["Incident_Type"] == 'Level 3 - OIS']['Occured_date_time']))
-
 ois_incidents = set()
 officer_involved_shootings = []
 for _, row in use_of_force_raw[
@@ -156,8 +151,10 @@ for _, row in use_of_force_raw[
         officer_involved_shootings.append(oic)
         ois_incidents.add((row["Occured_date_time"], row["Officer_ID"]))
 officer_involved_shootings_fieldnames = officer_involved_shootings[0].keys()
-        
-# wage_data_raw = pd.read_csv(wage_data_url)
+
+# logger.info("Downloading coban data set...")
+# coban_logs_raw = pd.read_csv(coban_logs_url)
+
 roster_field_map = {'badge': 'Badge_Num',
                     'full_name': 'Name',
                     'title': 'Title_Description',
@@ -170,8 +167,14 @@ roster_field_map = {'badge': 'Badge_Num',
 with open("_data/spd-lookup/db/seed/Seattle-WA-Police-Department_Historical.csv") as fd:
     roster_fieldnames = normalize_fieldnames([roster_field_map[i.strip()] for i in next(reader(fd))])
     dr = DictReader(fd, fieldnames=roster_fieldnames)
-    roster = [normalize_fields(row) for row in dr]
+    
+    roster = [normalize_fields(row)
+              for row in dr
+              # strip out everyone who's not an officer
+              if row['Badge_Num'].isdigit()]
+              
 
+# wage_data_raw = pd.read_csv(wage_data_url)
 with open("_data/compensation/2019.csv") as fd:
     compensation_fieldnames = normalize_fieldnames([i.strip() for i in next(reader(fd))])
     dr = DictReader(fd, fieldnames=compensation_fieldnames)
@@ -242,6 +245,8 @@ for page in nonexistent_pages:
         fd.write("---\n")
         fd.write("\n")
 
+# Closed Case Summaries
+# https://data.seattle.gov/api/views/f8kp-sfr3/rows.csv
 # Download Closed Case Summaries
 with open("_data/opa_ccs.json", "w") as fd:
     url = "http://www.seattle.gov/opa/news-and-reports/closed-case-summaries"

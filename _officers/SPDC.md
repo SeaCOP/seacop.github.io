@@ -1,5 +1,0 @@
----
-serial: SPDC
-layout: officer
----
-
