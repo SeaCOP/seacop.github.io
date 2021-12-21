@@ -1,76 +1,76 @@
-Incident_Num,Occured_date_time,Subject_Race,Subject_Gender,ID #
-385,07/01/2014 10:43:00 PM,White,Male,7445
-551,07/19/2014 01:27:00 AM,Black or African American,Male,6858
-686,07/30/2014 03:05:00 AM,White,Male,6726
-683,07/30/2014 03:05:00 AM,White,Male,7530
-979,08/30/2014 10:16:00 PM,White,Male,6834
-978,08/30/2014 10:13:00 PM,White,Male,5452
-1033,09/04/2014 04:52:00 PM,White,Male,5830
-1355,04/03/2014 11:39:00 AM,White,Male,6393
-3117,12/31/2014 09:55:00 PM,Black or African American,Female,7434
-3118,12/31/2014 09:55:00 PM,Black or African American,Female,6972
-3121,12/31/2014 09:55:00 PM,Black or African American,Female,7776
-6106,07/17/2015 04:39:00 AM,White,Male,7576
-6877,08/24/2015 02:45:00 AM,Black or African American,Male,6666
-7769,09/29/2015 03:00:00 AM,Not Specified,Male,7654
-7775,09/29/2015 05:30:00 AM,White,Male,6678
-8772,12/06/2015 01:22:00 PM,White,Male,7417
-8806,12/06/2015 01:28:00 PM,White,Male,6875
-8761,12/06/2015 01:53:00 PM,White,Male,5987
-8773,12/06/2015 12:37:00 PM,White,Male,7580
-8778,12/06/2015 02:00:00 PM,White,Male,8347
-8785,12/06/2015 02:00:00 PM,White,Male,6773
-8788,12/06/2015 01:53:00 PM,White,Male,6052
-8789,12/06/2015 02:00:00 PM,White,Male,7544
-8790,12/06/2015 02:00:00 PM,White,Male,7489
-8795,12/06/2015 01:53:00 PM,White,Male,7540
-8799,12/06/2015 01:43:00 PM,White,Male,5954
-9252,01/09/2016 01:54:00 PM,Black or African American,Male,7575
-9881,02/21/2016 03:00:00 PM,Black or African American,Male,7491
-9890,02/21/2016 04:00:00 PM,Black or African American,Male,7496
-11392,06/19/2016 01:43:00 PM,White,Male,7784
-13053,10/11/2016 12:44:00 PM,Asian,Male,6228
-15393,04/20/2017 01:18:00 PM,Black or African American,Male,7725
-15380,04/20/2017 01:30:00 PM,Black or African American,Male,5452
-15362,04/20/2017 01:20:00 PM,Black or African American,Male,7651
-15340,04/20/2017 01:30:00 PM,Black or African American,Male,8397
-15852,05/31/2017 02:10:00 PM,White,Male,5913
-16078,06/18/2017 09:50:00 AM,Black or African American,Female,7451
-16118,06/18/2017 09:50:00 AM,Black or African American,Female,8329
-17703,10/08/2017 07:43:00 PM,White,Male,7430
-17699,10/08/2017 07:28:00 PM,White,Female,8327
-18626,12/11/2017 11:52:00 PM,White,Male,8371
-18621,12/11/2017 11:50:00 PM,White,Male,6726
-18615,12/11/2017 11:52:00 PM,White,Male,8503
-18614,12/11/2017 11:50:00 PM,White,Male,8346
-18613,12/11/2017 12:00:00 AM,White,Male,8352
-20702,02/19/2018 04:22:00 AM,White,Male,7571
-20700,02/19/2018 04:22:00 AM,White,Male,6678
-39638,12/31/2018 05:01:00 PM,Nat Hawaiian/Oth Pac Islander,Male,8371
-40716,02/07/2019 03:22:00 AM,Hispanic or Latino,Male,6759
-40720,02/07/2019 03:22:00 AM,Hispanic or Latino,Male,5859
-41992,03/19/2019 09:20:00 PM,Asian,Male,8359
-41995,03/19/2019 09:20:00 PM,Asian,Male,7720
-42001,03/19/2019 09:20:00 PM,Asian,Male,8573
-41994,03/19/2019 09:30:00 PM,Asian,Male,8596
-44005,05/08/2019 07:24:00 PM,Not Specified,Male,7722
-44004,05/08/2019 07:24:00 PM,Not Specified,Male,5452
-43865,05/05/2019 02:07:00 AM,Black or African American,Male,7672
-46078,07/03/2019 08:11:00 PM,Asian,Female,7638
-46079,07/03/2019 08:11:00 PM,Asian,Female,8305
-50148,10/24/2019 10:34:00 PM,White,Male,7685
-52798,01/22/2020 03:30:00 PM,Black or African American,Male,8389
-52799,01/22/2020 12:00:00 AM,Not Specified,Male,8436
-55650,05/19/2020 03:26:00 PM,Black or African American,Male,6827
-61144,02/09/2021 09:20:00 PM,Black or African American,Male,8397
-61141,02/09/2021 09:25:00 PM,Black or African American,Male,7552
-61139,02/09/2021 09:25:00 PM,Black or African American,Male,7579
-61257,02/16/2021 09:19:00 PM,Not Specified,Male,7765
-61258,02/16/2021 09:19:00 PM,Not Specified,Male,8637
-62421,02/09/2021 09:15:00 PM,Black or African American,Male,8586
-62446,02/09/2021 09:15:00 PM,Black or African American,Male,8468
-63670,06/30/2021 04:00:00 AM,White,Male,8352
-64316,08/05/2021 12:00:00 AM,Black or African American,Male,7442
-64319,08/05/2021 06:30:00 PM,Black or African American,Male,6924
-64315,08/05/2021 12:00:00 AM,Black or African American,Male,6983
-65577,10/27/2021 03:10:00 PM,White,Male,6788
+Occured_date_time,Subject_Race,Subject_Gender,ID #
+07/01/2014 10:43:00 PM,White,Male,7445
+07/19/2014 01:27:00 AM,Black or African American,Male,6858
+07/30/2014 03:05:00 AM,White,Male,6726
+07/30/2014 03:05:00 AM,White,Male,7530
+08/30/2014 10:16:00 PM,White,Male,6834
+08/30/2014 10:13:00 PM,White,Male,5452
+09/04/2014 04:52:00 PM,White,Male,5830
+04/03/2014 11:39:00 AM,White,Male,6393
+12/31/2014 09:55:00 PM,Black or African American,Female,7434
+12/31/2014 09:55:00 PM,Black or African American,Female,6972
+12/31/2014 09:55:00 PM,Black or African American,Female,7776
+07/17/2015 04:39:00 AM,White,Male,7576
+08/24/2015 02:45:00 AM,Black or African American,Male,6666
+09/29/2015 03:00:00 AM,Not Specified,Male,7654
+09/29/2015 05:30:00 AM,White,Male,6678
+12/06/2015 01:22:00 PM,White,Male,7417
+12/06/2015 01:28:00 PM,White,Male,6875
+12/06/2015 01:53:00 PM,White,Male,5987
+12/06/2015 12:37:00 PM,White,Male,7580
+12/06/2015 02:00:00 PM,White,Male,8347
+12/06/2015 02:00:00 PM,White,Male,6773
+12/06/2015 01:53:00 PM,White,Male,6052
+12/06/2015 02:00:00 PM,White,Male,7544
+12/06/2015 02:00:00 PM,White,Male,7489
+12/06/2015 01:53:00 PM,White,Male,7540
+12/06/2015 01:43:00 PM,White,Male,5954
+01/09/2016 01:54:00 PM,Black or African American,Male,7575
+02/21/2016 03:00:00 PM,Black or African American,Male,7491
+02/21/2016 04:00:00 PM,Black or African American,Male,7496
+06/19/2016 01:43:00 PM,White,Male,7784
+10/11/2016 12:44:00 PM,Asian,Male,6228
+04/20/2017 01:18:00 PM,Black or African American,Male,7725
+04/20/2017 01:30:00 PM,Black or African American,Male,5452
+04/20/2017 01:20:00 PM,Black or African American,Male,7651
+04/20/2017 01:30:00 PM,Black or African American,Male,8397
+05/31/2017 02:10:00 PM,White,Male,5913
+06/18/2017 09:50:00 AM,Black or African American,Female,7451
+06/18/2017 09:50:00 AM,Black or African American,Female,8329
+10/08/2017 07:43:00 PM,White,Male,7430
+10/08/2017 07:28:00 PM,White,Female,8327
+12/11/2017 11:52:00 PM,White,Male,8371
+12/11/2017 11:50:00 PM,White,Male,6726
+12/11/2017 11:52:00 PM,White,Male,8503
+12/11/2017 11:50:00 PM,White,Male,8346
+12/11/2017 12:00:00 AM,White,Male,8352
+02/19/2018 04:22:00 AM,White,Male,7571
+02/19/2018 04:22:00 AM,White,Male,6678
+12/31/2018 05:01:00 PM,Nat Hawaiian/Oth Pac Islander,Male,8371
+02/07/2019 03:22:00 AM,Hispanic or Latino,Male,6759
+02/07/2019 03:22:00 AM,Hispanic or Latino,Male,5859
+03/19/2019 09:20:00 PM,Asian,Male,8359
+03/19/2019 09:20:00 PM,Asian,Male,7720
+03/19/2019 09:20:00 PM,Asian,Male,8573
+03/19/2019 09:30:00 PM,Asian,Male,8596
+05/08/2019 07:24:00 PM,Not Specified,Male,7722
+05/08/2019 07:24:00 PM,Not Specified,Male,5452
+05/05/2019 02:07:00 AM,Black or African American,Male,7672
+07/03/2019 08:11:00 PM,Asian,Female,7638
+07/03/2019 08:11:00 PM,Asian,Female,8305
+10/24/2019 10:34:00 PM,White,Male,7685
+01/22/2020 03:30:00 PM,Black or African American,Male,8389
+01/22/2020 12:00:00 AM,Not Specified,Male,8436
+05/19/2020 03:26:00 PM,Black or African American,Male,6827
+02/09/2021 09:20:00 PM,Black or African American,Male,8397
+02/09/2021 09:25:00 PM,Black or African American,Male,7552
+02/09/2021 09:25:00 PM,Black or African American,Male,7579
+02/16/2021 09:19:00 PM,Not Specified,Male,7765
+02/16/2021 09:19:00 PM,Not Specified,Male,8637
+02/09/2021 09:15:00 PM,Black or African American,Male,8586
+02/09/2021 09:15:00 PM,Black or African American,Male,8468
+06/30/2021 04:00:00 AM,White,Male,8352
+08/05/2021 12:00:00 AM,Black or African American,Male,7442
+08/05/2021 06:30:00 PM,Black or African American,Male,6924
+08/05/2021 12:00:00 AM,Black or African American,Male,6983
+10/27/2021 03:10:00 PM,White,Male,6788
