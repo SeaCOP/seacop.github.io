@@ -204,10 +204,10 @@ with open("_data/spd-lookup/db/seed/Seattle-WA-Police-Department_Historical.csv"
                             
 for officer in roster:
     if officer["Badge_Num"] in brady_badge_numbers:
-        officer["Brady List"] = True
+        officer["Brady_List"] = True
     else:
-        officer["Brady List"] = False
-roster_fieldnames.append("Brady List")
+        officer["Brady_List"] = False
+roster_fieldnames.append("Brady_List")
 
 # wage_data_raw = pd.read_csv(wage_data_url)
 with open("_data/compensation/2019.csv") as fd:

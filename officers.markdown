@@ -15,6 +15,7 @@ layout: page
         <th>Gross Pay (2019)</th>
         <th>Use of Force Count</th>
         <th>Shootings</th>
+	<th>Brady List</th>	
       </tr>
     </thead>
     <tbody>
@@ -29,6 +30,7 @@ layout: page
           <td>{{ site.data.compensation_normalized | where: "Name", site.data.roster_normalized[serial].Name | map: "Gross Pay" | first }}</td>
           <td>{{ site.data.use_of_force_normalized | where: "ID #", serial | size }}</td>
 	  <td>{{ site.data.officer_involved_shootings_normalized | where: "ID #", serial | size }}</td>
+  	  <td>{{ site.data.roster_normalized[serial].Brady_List }}</td>
         </tr>
       {% endfor %}
     </tbody>

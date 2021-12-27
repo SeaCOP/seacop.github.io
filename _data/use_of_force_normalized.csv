@@ -495,6 +495,7 @@ Record,Incident_Type,Occurred date,ID #,Victim Race,Victim Gender
 2014UOF-0539-1512-1367,Level 1 - Use of Force,04/19/2014 08:22:00 PM,6828,White,Male
 2014UOF-0540-1359-1368,Level 1 - Use of Force,04/19/2014 12:07:00 AM,7637,Hispanic or Latino,Male
 2014UOF-0541-1526-1369,Level 1 - Use of Force,04/24/2014 12:51:00 AM,6849,Black or African American,Male
+2014UOF-0590-7-1366,Level 1 - Use of Force,04/18/2014 11:00:00 AM,6883,White,Male
 2014UOF-0544-692-1371,Level 1 - Use of Force,04/21/2014 05:30:00 AM,6622,Black or African American,Male
 2014UOF-0545-1194-1372,Level 1 - Use of Force,04/21/2014 12:26:00 AM,7686,Black or African American,Female
 2014UOF-0546-617-1371,Level 1 - Use of Force,04/21/2014 05:28:00 AM,6055,Black or African American,Male
@@ -538,7 +539,6 @@ Record,Incident_Type,Occurred date,ID #,Victim Race,Victim Gender
 2014UOF-0587-1620-414,Level 1 - Use of Force,07/10/2014 05:46:00 PM,6246,Black or African American,Male
 2014UOF-0588-1542-1034,Level 2 - Use of Force,08/31/2014 03:30:00 AM,6874,Hispanic or Latino,Male
 2014UOF-0589-887-1386,Level 1 - Use of Force,04/18/2014 04:00:00 AM,6609,White,Male
-2014UOF-0590-7-1366,Level 1 - Use of Force,04/18/2014 11:00:00 AM,6883,White,Male
 2014UOF-0591-1343-1385,Level 1 - Use of Force,04/18/2014 02:46:00 PM,7452,White,Male
 2014UOF-0592-1285-1383,Level 1 - Use of Force,04/26/2014 09:00:00 PM,7659,Black or African American,Male
 2014UOF-0593-733-1383,Level 1 - Use of Force,04/26/2014 09:00:00 PM,5452,Black or African American,Male
@@ -2570,6 +2570,7 @@ Record,Incident_Type,Occurred date,ID #,Victim Race,Victim Gender
 2015UOF-1021-1069-5074,Level 1 - Use of Force,07/15/2015 04:49:00 PM,7733,Black or African American,Male
 2015UOF-1022-1115-959,Level 1 - Use of Force,07/23/2015 10:42:00 AM,7632,White,Male
 2015UOF-1023-1159-5169,Level 1 - Use of Force,07/25/2015 01:30:00 AM,7727,White,Female
+2015UOF-1118-1003-4913,Level 2 - Use of Force,07/05/2015 01:20:00 AM,6901,Asian,Male
 2015UOF-1024-1290-5117,Level 1 - Use of Force,07/21/2015 02:38:00 AM,7661,American Indian/Alaska Native,Male
 2015UOF-1025-1464-5102,Level 1 - Use of Force,07/20/2015 12:28:00 AM,6788,Black or African American,Male
 2015UOF-1026-1168-5103,Level 1 - Use of Force,07/20/2015 12:28:00 AM,6926,Black or African American,Male
@@ -2614,6 +2615,7 @@ Record,Incident_Type,Occurred date,ID #,Victim Race,Victim Gender
 2015UOF-1068-876-5090,Level 1 - Use of Force,07/18/2015 08:40:00 AM,6602,Black or African American,Male
 2015UOF-1070-1495-5090,Level 1 - Use of Force,07/18/2015 09:05:00 AM,7639,Black or African American,Male
 2015UOF-1071-1322-5090,Level 1 - Use of Force,07/18/2015 08:40:00 AM,7676,Black or African American,Male
+2015UOF-1298-1311-5582,Level 2 - Use of Force,08/25/2015 10:25:00 PM,7503,White,Male
 2015UOF-1072-2062-5121,Level 1 - Use of Force,07/21/2015 07:36:00 PM,8315,Black or African American,Male
 2015UOF-1073-41-5121,Level 1 - Use of Force,07/21/2015 07:47:00 PM,7383,Black or African American,Male
 2015UOF-1074-230-5121,Level 1 - Use of Force,07/21/2015 07:46:00 PM,6987,Black or African American,Male
@@ -2657,7 +2659,6 @@ Record,Incident_Type,Occurred date,ID #,Victim Race,Victim Gender
 2015UOF-1116-1197-5285,Level 1 - Use of Force,08/02/2015 09:27:00 PM,7499,White,Male
 2015UOF-1117-1008-4913,Level 1 - Use of Force,07/05/2015 01:20:00 AM,6907,Asian,Male
 2015UOF-1117-1008-4914,Level 1 - Use of Force,07/05/2015 01:20:00 AM,6907,Black or African American,Female
-2015UOF-1118-1003-4913,Level 2 - Use of Force,07/05/2015 01:20:00 AM,6901,Asian,Male
 2015UOF-1118-1003-4914,Level 2 - Use of Force,07/05/2015 01:20:00 AM,6901,Black or African American,Female
 2015UOF-1119-1277-5182,Level 2 - Use of Force,07/25/2015 11:30:00 PM,7488,Black or African American,Male
 2015UOF-1120-1318-5182,Level 2 - Use of Force,07/25/2015 10:27:00 PM,7512,Black or African American,Male
@@ -2787,6 +2788,7 @@ Record,Incident_Type,Occurred date,ID #,Victim Race,Victim Gender
 2015UOF-1251-1948-6159,Level 1 - Use of Force,08/09/2015 02:45:00 AM,7773,White,Male
 2015UOF-1252-2016-5469,Level 1 - Use of Force,08/17/2015 04:46:00 PM,8306,White,Male
 2015UOF-1253-1511-5494,Level 1 - Use of Force,08/20/2015 01:29:00 AM,6829,White,Male
+2015UOF-1346-1959-5543,Level 2 - Use of Force,08/24/2015 01:41:00 PM,7784,White,Male
 2015UOF-1254-1209-2822,Level 1 - Use of Force,08/20/2015 04:39:00 PM,7479,Black or African American,Male
 2015UOF-1255-1535-2822,Level 1 - Use of Force,08/20/2015 04:39:00 PM,6858,Black or African American,Male
 2015UOF-1256-1311-5518,Level 1 - Use of Force,08/22/2015 10:09:00 PM,7503,Black or African American,Male
@@ -2829,7 +2831,6 @@ Record,Incident_Type,Occurred date,ID #,Victim Race,Victim Gender
 2015UOF-1297-81-5304,Level 1 - Use of Force,08/03/2015 09:52:00 PM,7430,White,Male
 2015UOF-1297-81-5305,Level 1 - Use of Force,08/03/2015 09:52:00 PM,7430,White,Male
 2015UOF-1297-81-5306,Level 1 - Use of Force,08/03/2015 09:52:00 PM,7430,White,Female
-2015UOF-1298-1311-5582,Level 2 - Use of Force,08/25/2015 10:25:00 PM,7503,White,Male
 2015UOF-1299-1323-5359,Level 1 - Use of Force,08/08/2015 11:45:00 AM,7677,Not Specified,Male
 2015UOF-1300-1065-5490,Level 1 - Use of Force,08/19/2015 03:20:00 PM,7729,Black or African American,Male
 2015UOF-1301-78-5591,Level 2 - Use of Force,08/26/2015 10:24:00 PM,7427,White,Male
@@ -2875,7 +2876,6 @@ Record,Incident_Type,Occurred date,ID #,Victim Race,Victim Gender
 2015UOF-1343-77-5526,Level 2 - Use of Force,08/23/2015 12:50:00 PM,7429,White,Male
 2015UOF-1344-1071-5526,Level 2 - Use of Force,08/23/2015 02:00:00 PM,7735,White,Male
 2015UOF-1345-1076-5543,Level 2 - Use of Force,08/24/2015 01:41:00 PM,6933,White,Male
-2015UOF-1346-1959-5543,Level 2 - Use of Force,08/24/2015 01:41:00 PM,7784,White,Male
 2015UOF-1347-889-5564,Level 2 - Use of Force,08/24/2015 05:31:00 PM,6610,White,Male
 2015UOF-1348-516-5564,Level 2 - Use of Force,08/24/2015 05:31:00 PM,4993,White,Male
 2015UOF-1349-1903-5723,Level 1 - Use of Force,09/07/2015 03:37:00 PM,7673,Black or African American,Male
@@ -4833,6 +4833,7 @@ Record,Incident_Type,Occurred date,ID #,Victim Race,Victim Gender
 2016UOF-1385-1223-8923,Level 2 - Use of Force,11/11/2016 08:25:00 AM,7695,Black or African American,Female
 2016UOF-1386-1885-8923,Level 2 - Use of Force,11/11/2016 08:18:00 AM,7740,Black or African American,Female
 2016UOF-1387-1158-6428,Level 1 - Use of Force,11/08/2016 08:35:00 PM,7726,Black or African American,Male
+2017UOF-0096-1182-10813,Level 1 - Use of Force,02/02/2017 05:50:00 PM,7557,White,Male
 2016UOF-1388-2230-6428,Level 1 - Use of Force,11/08/2016 08:36:00 PM,8413,Black or African American,Male
 2016UOF-1389-1298-6428,Level 1 - Use of Force,11/08/2016 08:36:00 PM,7669,Black or African American,Male
 2016UOF-1392-2132-10238,Level 1 - Use of Force,11/16/2016 07:30:00 PM,8358,Not Specified,Male
@@ -4875,6 +4876,7 @@ Record,Incident_Type,Occurred date,ID #,Victim Race,Victim Gender
 2016UOF-1431-1390-710,Level 1 - Use of Force,11/29/2016 03:13:00 AM,7614,White,Female
 2016UOF-1433-2187-10295,Level 1 - Use of Force,11/25/2016 11:00:00 PM,8386,White,Male
 2016UOF-1434-1360-10279,Level 1 - Use of Force,11/23/2016 08:00:00 PM,7640,White,Female
+2017UOF-0189-1908-10711,Level 2 - Use of Force,01/20/2017 09:00:00 PM,7759,White,Female
 2016UOF-1436-2042-10064,Level 1 - Use of Force,10/23/2016 10:56:00 PM,8313,White,Male
 2016UOF-1437-1204-9562,Level 2 - Use of Force,11/03/2016 11:10:00 AM,7520,Black or African American,Female
 2016UOF-1438-1203-5328,Level 2 - Use of Force,11/03/2016 11:15:00 AM,7522,Black or African American,Female
@@ -4919,6 +4921,7 @@ Record,Incident_Type,Occurred date,ID #,Victim Race,Victim Gender
 2016UOF-1480-164-10373,Level 1 - Use of Force,12/05/2016 07:11:00 AM,7610,Not Specified,Male
 2016UOF-1481-1192-10298,Level 2 - Use of Force,11/27/2016 12:43:00 AM,7684,Black or African American,Male
 2016UOF-1482-1897-10298,Level 1 - Use of Force,11/27/2016 12:42:00 AM,7752,Black or African American,Male
+2017UOF-0951-1245-12667,Level 1 - Use of Force,08/19/2017 06:30:00 AM,7539,White,Female
 2016UOF-1483-1311-10298,Level 1 - Use of Force,11/27/2016 12:42:00 AM,7503,Black or African American,Male
 2016UOF-1484-153-10230,Level 2 - Use of Force,11/14/2016 05:17:00 PM,7412,Black or African American,Male
 2016UOF-1485-1140-2479,Level 2 - Use of Force,11/14/2016 05:15:00 PM,7548,Not Specified,Not Specified
@@ -5093,7 +5096,6 @@ Record,Incident_Type,Occurred date,ID #,Victim Race,Victim Gender
 2017UOF-0093-2178-3436,Level 2 - Use of Force,01/31/2017 04:34:00 AM,8380,Black or African American,Male
 2017UOF-0094-1308-7171,Level 1 - Use of Force,01/31/2017 04:50:00 AM,7500,Not Specified,Female
 2017UOF-0095-1339-10663,Level 2 - Use of Force,01/13/2017 08:02:00 PM,7447,Not Specified,Male
-2017UOF-0096-1182-10813,Level 1 - Use of Force,02/02/2017 05:50:00 PM,7557,White,Male
 2017UOF-0098-1764-10649,Level 2 - Use of Force,01/12/2017 03:40:00 PM,6296,Black or African American,Male
 2017UOF-0099-81-10649,Level 2 - Use of Force,01/12/2017 03:40:00 PM,7430,Black or African American,Male
 2017UOF-0100-1079-10807,Level 1 - Use of Force,02/01/2017 09:00:00 PM,6942,Black or African American,Female
@@ -5171,7 +5173,6 @@ Record,Incident_Type,Occurred date,ID #,Victim Race,Victim Gender
 2017UOF-0185-6-10825,Level 2 - Use of Force,02/04/2017 03:55:00 AM,6882,Not Specified,Male
 2017UOF-0187-2180-10948,Level 2 - Use of Force,02/19/2017 11:26:00 PM,8382,Not Specified,Male
 2017UOF-0188-1490-1023,Level 2 - Use of Force,01/20/2017 09:00:00 PM,6810,Not Specified,Not Specified
-2017UOF-0189-1908-10711,Level 2 - Use of Force,01/20/2017 09:00:00 PM,7759,White,Female
 2017UOF-0190-879-10710,Level 2 - Use of Force,01/20/2017 09:00:00 PM,6604,Not Specified,Male
 2017UOF-0191-525-1023,Level 2 - Use of Force,01/20/2017 08:55:00 PM,5560,Not Specified,Not Specified
 2017UOF-0192-1903-10713,Level 2 - Use of Force,01/20/2017 08:55:00 PM,7673,White,Male
@@ -5300,6 +5301,7 @@ Record,Incident_Type,Occurred date,ID #,Victim Race,Victim Gender
 2017UOF-0313-220-11132,Level 1 - Use of Force,03/16/2017 05:15:00 AM,6984,Nat Hawaiian/Oth Pac Islander,Male
 2017UOF-0314-1434-11132,Level 1 - Use of Force,03/16/2017 05:25:00 AM,6773,Nat Hawaiian/Oth Pac Islander,Male
 2017UOF-0314-1434-11142,Level 1 - Use of Force,03/16/2017 05:25:00 AM,6773,Nat Hawaiian/Oth Pac Islander,Male
+2017UOF-0952-1322-12678,Level 1 - Use of Force,08/18/2017 10:15:00 PM,7676,White,Male
 2017UOF-0318-1373-11207,Level 1 - Use of Force,03/27/2017 01:30:00 AM,7461,White,Male
 2017UOF-0319-2146-11184,Level 1 - Use of Force,03/24/2017 02:53:00 AM,8368,White,Male
 2017UOF-0320-1368-8332,Level 3 - Use of Force,03/15/2017 03:09:00 PM,7456,American Indian/Alaska Native,Male
@@ -5382,6 +5384,7 @@ Record,Incident_Type,Occurred date,ID #,Victim Race,Victim Gender
 2017UOF-0403-369-11294,Level 1 - Use of Force,04/08/2017 08:05:00 PM,5134,White,Male
 2017UOF-0404-1177-11209,Level 2 - Use of Force,03/28/2017 02:30:00 AM,7552,Hispanic or Latino,Male
 2017UOF-0405-1889-11208,Level 1 - Use of Force,03/28/2017 02:02:00 AM,7745,Hispanic or Latino,Male
+2017UOF-1090-33-12708,Level 1 - Use of Force,08/22/2017 10:16:00 PM,6711,White,Male
 2017UOF-0406-193-11398,Level 1 - Use of Force,04/21/2017 10:30:00 PM,7603,Not Specified,Female
 2017UOF-0407-193-11399,Level 1 - Use of Force,04/21/2017 10:45:00 PM,7603,Black or African American,Male
 2017UOF-0408-1511-11384,Level 1 - Use of Force,04/20/2017 11:30:00 PM,6829,Not Specified,Male
@@ -5425,6 +5428,7 @@ Record,Incident_Type,Occurred date,ID #,Victim Race,Victim Gender
 2017UOF-0446-2213-11342,Level 1 - Use of Force,04/16/2017 12:30:00 PM,8405,Black or African American,Male
 2017UOF-0447-1676-11086,Level 1 - Use of Force,03/10/2017 12:39:00 PM,5781,Asian,Male
 2017UOF-0448-2002-11055,Level 1 - Use of Force,03/07/2017 11:13:00 PM,7797,Not Specified,Male
+2017UOF-1090-33-9265,Level 1 - Use of Force,08/22/2017 10:16:00 PM,6711,White,Female
 2017UOF-0449-2146-8585,Level 1 - Use of Force,04/03/2017 10:31:00 PM,8368,Not Specified,Male
 2017UOF-0450-1948-8585,Level 1 - Use of Force,04/03/2017 10:52:00 PM,7773,Not Specified,Male
 2017UOF-0451-1143-11338,Level 1 - Use of Force,04/15/2017 10:10:00 PM,7715,White,Male
@@ -5553,6 +5557,7 @@ Record,Incident_Type,Occurred date,ID #,Victim Race,Victim Gender
 2017UOF-0574-1214-11509,Level 2 - Use of Force,05/08/2017 02:30:00 AM,7688,Hispanic or Latino,Male
 2017UOF-0575-1125-11509,Level 2 - Use of Force,05/08/2017 02:43:00 AM,7713,Hispanic or Latino,Male
 2017UOF-0576-1889-11612,Level 1 - Use of Force,05/21/2017 12:54:00 AM,7745,Black or African American,Male
+2017UOF-1405-1046-13384,Level 2 - Use of Force,10/30/2017 02:45:00 PM,7593,White,Female
 2017UOF-0577-1889-11592,Level 1 - Use of Force,05/17/2017 11:45:00 PM,7745,Hispanic or Latino,Male
 2017UOF-0578-1224-11592,Level 1 - Use of Force,05/18/2017 11:39:00 PM,7696,Hispanic or Latino,Male
 2017UOF-0579-1145-11592,Level 1 - Use of Force,05/17/2017 11:39:00 PM,7717,Hispanic or Latino,Male
@@ -5900,8 +5905,6 @@ Record,Incident_Type,Occurred date,ID #,Victim Race,Victim Gender
 2017UOF-0948-2043-12720,Level 1 - Use of Force,08/23/2017 07:05:00 PM,8314,Black or African American,Male
 2017UOF-0949-2106-12720,Level 1 - Use of Force,08/23/2017 06:34:00 PM,8353,Black or African American,Male
 2017UOF-0950-2185-12712,Level 1 - Use of Force,08/22/2017 10:57:00 AM,8384,Black or African American,Male
-2017UOF-0951-1245-12667,Level 1 - Use of Force,08/19/2017 06:30:00 AM,7539,White,Female
-2017UOF-0952-1322-12678,Level 1 - Use of Force,08/18/2017 10:15:00 PM,7676,White,Male
 2017UOF-0953-1191-12638,Level 1 - Use of Force,08/18/2017 07:50:00 AM,7682,Hispanic or Latino,Male
 2017UOF-0954-1898-12568,Level 1 - Use of Force,08/14/2017 03:28:00 PM,7753,Black or African American,Male
 2017UOF-0955-1884-12566,Level 1 - Use of Force,08/14/2017 02:30:00 PM,7739,Black or African American,Female
@@ -5984,6 +5987,7 @@ Record,Incident_Type,Occurred date,ID #,Victim Race,Victim Gender
 2017UOF-1042-1235-12902,Level 1 - Use of Force,09/06/2017 09:20:00 PM,7530,White,Female
 2017UOF-1043-1349-12903,Level 1 - Use of Force,09/07/2017 06:39:00 AM,7803,Black or African American,Female
 2017UOF-1044-220-12905,Level 1 - Use of Force,09/05/2017 10:08:00 AM,6984,White,Male
+2017UOF-1406-2098-13523,Level 1 - Use of Force,11/17/2017 06:23:00 PM,8340,White,Male
 2017UOF-1047-176-12891,Level 1 - Use of Force,09/06/2017 06:02:00 AM,6971,Black or African American,Female
 2017UOF-1047-176-12892,Level 1 - Use of Force,09/06/2017 06:02:00 AM,6971,Black or African American,Male
 2017UOF-1047-176-12893,Level 1 - Use of Force,09/06/2017 06:02:00 AM,6971,Black or African American,Male
@@ -6030,8 +6034,6 @@ Record,Incident_Type,Occurred date,ID #,Victim Race,Victim Gender
 2017UOF-1087-1162-12745,Level 2 - Use of Force,08/26/2017 01:39:00 PM,6919,Not Specified,Male
 2017UOF-1088-2218-12745,Level 2 - Use of Force,08/26/2017 01:39:00 PM,8398,Not Specified,Male
 2017UOF-1089-2160-12745,Level 2 - Use of Force,08/26/2017 01:39:00 PM,8377,Not Specified,Male
-2017UOF-1090-33-12708,Level 1 - Use of Force,08/22/2017 10:16:00 PM,6711,White,Male
-2017UOF-1090-33-9265,Level 1 - Use of Force,08/22/2017 10:16:00 PM,6711,White,Female
 2017UOF-1091-1676-12739,Level 2 - Use of Force,08/20/2017 06:05:00 PM,5781,Black or African American,Female
 2017UOF-1092-1882-12739,Level 2 - Use of Force,08/20/2017 05:45:00 PM,7737,Black or African American,Female
 2017UOF-1093-2185-12979,Level 1 - Use of Force,09/15/2017 09:03:00 AM,8384,White,Male
@@ -6342,8 +6344,6 @@ Record,Incident_Type,Occurred date,ID #,Victim Race,Victim Gender
 2017UOF-1402-1764-13279,Level 2 - Use of Force,10/21/2017 01:46:00 PM,6296,White,Male
 2017UOF-1403-1140-13279,Level 2 - Use of Force,10/21/2017 01:46:00 PM,7548,White,Male
 2017UOF-1404-1049-13384,Level 2 - Use of Force,10/30/2017 02:51:00 PM,7560,White,Female
-2017UOF-1405-1046-13384,Level 2 - Use of Force,10/30/2017 02:45:00 PM,7593,White,Female
-2017UOF-1406-2098-13523,Level 1 - Use of Force,11/17/2017 06:23:00 PM,8340,White,Male
 2017UOF-1407-1034-13436,Level 1 - Use of Force,11/03/2017 11:06:00 PM,7580,Nat Hawaiian/Oth Pac Islander,Male
 2017UOF-1408-1528-13009,Level 1 - Use of Force,11/10/2017 04:30:00 PM,6848,Black or African American,Male
 2017UOF-1409-2065-13299,Level 2 - Use of Force,10/25/2017 02:30:00 AM,8321,Black or African American,Male
@@ -7529,6 +7529,7 @@ Record,Incident_Type,Occurred date,ID #,Victim Race,Victim Gender
 2018UOF-1032-2068-16092,Level 1 - Use of Force,06/21/2018 01:51:00 AM,8324,Black or African American,Male
 2018UOF-1032-2068-16093,Level 1 - Use of Force,06/21/2018 01:51:00 AM,8324,Not Specified,Male
 2018UOF-1033-2347-16196,Level 1 - Use of Force,07/02/2018 11:45:00 PM,8483,White,Male
+2018UOF-1230-2576-16506,Level 1 - Use of Force,07/31/2018 04:17:00 PM,8591,White,Female
 2018UOF-1034-2325-15837,Level 1 - Use of Force,05/30/2018 07:25:00 AM,8471,Black or African American,Male
 2018UOF-1035-2033-16005,Level 1 - Use of Force,06/16/2018 10:40:00 AM,8310,Black or African American,Female
 2018UOF-1036-2002-16071,Level 1 - Use of Force,06/22/2018 01:20:00 AM,7797,White,Male
@@ -7707,7 +7708,6 @@ Record,Incident_Type,Occurred date,ID #,Victim Race,Victim Gender
 2018UOF-1227-1331-16530,Level 1 - Use of Force,08/02/2018 06:30:00 PM,7442,Black or African American,Male
 2018UOF-1228-2473-16510,Level 1 - Use of Force,07/31/2018 08:36:00 PM,8553,White,Male
 2018UOF-1229-2248-16511,Level 1 - Use of Force,07/31/2018 03:40:00 PM,8423,White,Male
-2018UOF-1230-2576-16506,Level 1 - Use of Force,07/31/2018 04:17:00 PM,8591,White,Female
 2018UOF-1231-1366-16502,Level 1 - Use of Force,07/31/2018 03:07:00 PM,7454,White,Female
 2018UOF-1232-1968-16286,Level 1 - Use of Force,07/10/2018 10:07:00 PM,7783,Asian,Female
 2018UOF-1233-2475-7786,Level 1 - Use of Force,07/19/2018 10:45:00 AM,8556,White,Female
@@ -10231,6 +10231,7 @@ Record,Incident_Type,Occurred date,ID #,Victim Race,Victim Gender
 2020UOF-0380-2478-22036,Level 2 - Use of Force,03/30/2020 10:01:00 AM,8555,White,Male
 2020UOF-0381-1813-22047,Level 1 - Use of Force,03/30/2020 10:01:00 AM,6106,White,Male
 2020UOF-0382-2622-22036,Level 1 - Use of Force,03/30/2020 10:04:00 AM,8614,White,Male
+2020UOF-0431-2445-1221,Level 1 - Use of Force,04/24/2020 09:12:00 AM,8532,White,Male
 2020UOF-0385-1358-21768,Level 2 - Use of Force,02/28/2020 02:15:00 PM,7643,Black or African American,Male
 2020UOF-0386-2189-21768,Level 2 - Use of Force,02/28/2020 02:15:00 PM,8389,Black or African American,Male
 2020UOF-0387-2188-21768,Level 2 - Use of Force,02/28/2020 02:15:00 PM,8388,Black or African American,Male
@@ -10267,7 +10268,6 @@ Record,Incident_Type,Occurred date,ID #,Victim Race,Victim Gender
 2020UOF-0428-2222-22110,Level 2 - Use of Force,04/04/2020 12:04:00 PM,8407,White,Male
 2020UOF-0429-1996-16730,Level 1 - Use of Force,04/10/2020 12:02:00 PM,7795,Black or African American,Male
 2020UOF-0430-2013-16730,Level 1 - Use of Force,04/10/2020 12:10:00 PM,8303,Black or African American,Male
-2020UOF-0431-2445-1221,Level 1 - Use of Force,04/24/2020 09:12:00 AM,8532,White,Male
 2020UOF-0433-2534-22198,Level 1 - Use of Force,04/21/2020 08:27:00 PM,8582,Black or African American,Male
 2020UOF-0434-2042-22198,Level 1 - Use of Force,04/21/2020 11:43:00 PM,8313,Black or African American,Male
 2020UOF-0435-2149-22031,Level 2 - Use of Force,03/31/2020 04:56:00 PM,8371,Black or African American,Male
@@ -10623,6 +10623,7 @@ Record,Incident_Type,Occurred date,ID #,Victim Race,Victim Gender
 2020UOF-0853-2108-22667,Level 2 - Use of Force,06/02/2020 12:00:00 AM,8347,Not Specified,Not Specified
 2020UOF-0853-2108-22668,Level 2 - Use of Force,06/02/2020 12:00:00 AM,8347,Not Specified,Not Specified
 2020UOF-0855-864-1023,Level 2 - Use of Force,06/02/2020 11:40:00 PM,5921,Not Specified,Not Specified
+2020UOF-1464-1907-23324,Level 2 - Use of Force,08/16/2020 11:30:00 PM,7758,White,Male
 2020UOF-0855-864-2743,Level 2 - Use of Force,06/02/2020 11:40:00 PM,5921,Not Specified,Not Specified
 2020UOF-0855-864-7943,Level 2 - Use of Force,06/02/2020 11:40:00 PM,5921,Not Specified,Male
 2020UOF-0856-77-5643,Level 2 - Use of Force,06/02/2020 11:36:00 PM,7429,Not Specified,Male
@@ -11174,7 +11175,6 @@ Record,Incident_Type,Occurred date,ID #,Victim Race,Victim Gender
 2020UOF-1461-1672-23617,Level 2 - Use of Force,07/19/2020 12:00:00 AM,5774,Not Specified,Not Specified
 2020UOF-1462-1975-23625,Level 2 - Use of Force,08/16/2020 08:00:00 PM,7786,Not Specified,Male
 2020UOF-1463-1071-23324,Level 2 - Use of Force,08/16/2020 10:00:00 AM,7735,White,Male
-2020UOF-1464-1907-23324,Level 2 - Use of Force,08/16/2020 11:30:00 PM,7758,White,Male
 2020UOF-1465-2563-20615,Level 2 - Use of Force,08/16/2020 10:16:00 PM,8586,White,Not Specified
 2020UOF-1466-1398-20774,Level 2 - Use of Force,09/07/2020 03:00:00 PM,6725,Not Specified,Female
 2020UOF-1466-1398-7414,Level 2 - Use of Force,09/07/2020 03:00:00 PM,6725,White,Male
@@ -11986,6 +11986,7 @@ Record,Incident_Type,Occurred date,ID #,Victim Race,Victim Gender
 2021UOF-0601-2575-9076,Level 1 - Use of Force,07/30/2021 08:30:00 PM,8596,Black or African American,Male
 2021UOF-0602-546-25995,Level 1 - Use of Force,07/31/2021 08:31:00 PM,6079,Black or African American,Male
 2021UOF-0603-1193-6762,Level 1 - Use of Force,07/25/2021 01:48:00 AM,7685,Not Specified,Male
+2021UOF-0651-37-25385,Level 2 - Use of Force,05/16/2021 10:10:00 PM,7617,Asian,Male
 2021UOF-0604-1186-25099,Level 1 - Use of Force,04/07/2021 05:00:00 AM,7680,Not Specified,Male
 2021UOF-0606-2326-24943,Level 1 - Use of Force,03/17/2021 11:30:00 PM,8472,White,Male
 2021UOF-0606-2326-24944,Level 1 - Use of Force,03/17/2021 11:30:00 PM,8472,Black or African American,Male
@@ -12019,7 +12020,6 @@ Record,Incident_Type,Occurred date,ID #,Victim Race,Victim Gender
 2021UOF-0648-1975-25263,Level 1 - Use of Force,05/01/2021 06:15:00 PM,7786,Not Specified,Not Specified
 2021UOF-0649-2066-25385,Level 2 - Use of Force,05/16/2021 10:10:00 PM,8323,Asian,Male
 2021UOF-0650-2282-25385,Level 2 - Use of Force,05/16/2021 10:05:00 PM,8445,Asian,Male
-2021UOF-0651-37-25385,Level 2 - Use of Force,05/16/2021 10:10:00 PM,7617,Asian,Male
 2021UOF-0652-156-25385,Level 2 - Use of Force,05/16/2021 10:14:00 PM,7415,Asian,Male
 2021UOF-0653-1191-25776,Level 2 - Use of Force,07/04/2021 10:16:00 AM,7682,Black or African American,Male
 2021UOF-0656-2422-25830,Level 2 - Use of Force,02/14/2021 05:30:00 PM,8517,White,Male
