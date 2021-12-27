@@ -28,12 +28,15 @@ logger = logging.getLogger(__name__)
 # _data/compensation
 # _data/rosters
 
+
+
 complaints_url = "https://data.seattle.gov/api/views/99yi-dthu/rows.csv"
 use_of_force_url = "https://data.seattle.gov/api/views/ppi5-g2bj/rows.csv"
-coban_logs_url = "https://data.seattle.gov/api/views/tpvk-5fr3/rows.csv"
+terry_stop_url = "https://data.seattle.gov/api/views/28ny-9ts8/rows.csv"
+
+# coban_logs_url = "https://data.seattle.gov/api/views/tpvk-5fr3/rows.csv"
 # wage_data_url = "https://data.seattle.gov/api/views/2khk-5ukd/rows.csv"
 # license_data_url = "https://data.seattle.gov/api/views/enxu-fgzb/rows.csv"
-
 
 def normalize_fieldnames(row):
     if "Name" in row:
@@ -87,6 +90,13 @@ for f in os.listdir(p):
         # removing 2015OPA-1919 which apparently isn't to anyone
         allegations.extend(row for row in dr if 'ID #' in row)
 
+
+with open("_data/brady_cops.csv") as fd:
+    brady_cops_fieldnames = [i.strip() for i in next(reader(fd))]
+    dr = DictReader(fd, fieldnames=brady_cops_fieldnames)
+    brady_cops = [row for row in dr if row['agency'] == "SPD"]
+brady_badge_numbers = [r["badge"] for r in brady_cops]
+        
 with open("_data/named_employee_id_map.csv") as fd:
     named_employee_id_map_fieldnames = [i.strip() for i in next(reader(fd))]
     dr = DictReader(fd, fieldnames=named_employee_id_map_fieldnames)
@@ -119,6 +129,9 @@ for _, complaint in complaints.iterrows():
              'Action taken':complaint["Discipline"]})
         officer_allegations.add((officer_badge_number, opa_file))
 allegations.extend(allegations_from_complaints)
+
+files = set(opa_file for _, opa_file in officer_allegations)
+# officers_by_allegation = 
 
 logger.info("Downloading use of force data set...")
 use_of_force_raw = pd.read_csv(use_of_force_url)
@@ -154,6 +167,23 @@ officer_involved_shootings_fieldnames = officer_involved_shootings[0].keys()
 
 # logger.info("Downloading coban data set...")
 # coban_logs_raw = pd.read_csv(coban_logs_url)
+# terry_stop['Officer YOB']
+# terry_stop['Officer Race'] 
+
+logger.info("Downloading terry stop data...")
+terry_stop_raw = pd.read_csv(terry_stop_url)
+terry_stop = terry_stop_raw[['Terry Stop ID',
+                             'Stop Resolution',
+                             'Officer ID',
+                             'Subject Perceived Race',
+                             'Subject Perceived Gender',
+                             'Reported Date',
+                             'Reported Time',
+                             'Initial Call Type',
+                             'Final Call Type',
+                             'Call Type',
+                             'Frisk Flag',
+                             'Arrest Flag']]
 
 roster_field_map = {'badge': 'Badge_Num',
                     'full_name': 'Name',
@@ -167,12 +197,17 @@ roster_field_map = {'badge': 'Badge_Num',
 with open("_data/spd-lookup/db/seed/Seattle-WA-Police-Department_Historical.csv") as fd:
     roster_fieldnames = normalize_fieldnames([roster_field_map[i.strip()] for i in next(reader(fd))])
     dr = DictReader(fd, fieldnames=roster_fieldnames)
-    
     roster = [normalize_fields(row)
               for row in dr
               # strip out everyone who's not an officer
               if row['Badge_Num'].isdigit()]
-              
+                            
+for officer in roster:
+    if officer["Badge_Num"] in brady_badge_numbers:
+        officer["Brady List"] = True
+    else:
+        officer["Brady List"] = False
+roster_fieldnames.append("Brady List")
 
 # wage_data_raw = pd.read_csv(wage_data_url)
 with open("_data/compensation/2019.csv") as fd:
