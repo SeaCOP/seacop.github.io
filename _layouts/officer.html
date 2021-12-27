@@ -5,7 +5,6 @@ layout: default
 {% comment %}Hack to convert serial to string{% endcomment %}
 {% capture serial %}{{page.serial | escape}}{% endcapture %}
 {% capture name %}{{site.data.roster_normalized[serial].Name | escape}}{% endcapture %}
-{% capture brady_list %}{{site.data.roster_normalized[serial].Brady_List | escape}}{% endcapture %}
 {% assign compensations = site.data.compensation_normalized | where: "Name", name %}
 {% assign allegations = site.data.allegations_normalized | where: "ID #", serial %}
 {% assign use_of_force = site.data.use_of_force_normalized | where: "ID #", serial %}
@@ -38,10 +37,6 @@ layout: default
     <tr>
       <td><b>Last Updated</b></td>
       <td>{{ page.last_updated | date: '%B %d, %Y' }}</td>
-    </tr>
-    <tr>
-      <td><b>Found on Brady List</b></td>
-      <td>{{ page.brady_list | escape}}</td>
     </tr>
   </table>
 
